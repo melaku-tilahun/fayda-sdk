@@ -5,18 +5,18 @@
 export const ENVIRONMENTS = {
     UAT: {
         issuer: 'https://esignet.ida.fayda.et',
-        authorizationEndpoint: 'https://esignet.ida.fayda.et/authorize',
-        tokenEndpoint: 'https://esignet.ida.fayda.et/v1/esignet/oauth/v2/token',
-        userInfoEndpoint: 'https://esignet.ida.fayda.et/v1/esignet/oidc/userinfo',
+        authorizationEndpoint: 'https://esignet...',
+        tokenEndpoint: 'https://esignet....',
+        userInfoEndpoint: 'https://esignet.ida...',
         // Common ACR values for Fayda
-        acrValues: 'mosip:idp:acr:generated-code mosip:idp:acr:biometrics mosip:idp:acr:linked-wallet'
+        acrValues: 'mosip....'
     },
     PROD: {
         issuer: 'https://id.gov.et', // Placeholder, developer needs to confirm prod issuer
-        authorizationEndpoint: 'https://id.gov.et/authorize',
-        tokenEndpoint: 'https://id.gov.et/v1/esignet/oauth/v2/token',
-        userInfoEndpoint: 'https://id.gov.et/v1/esignet/oidc/userinfo',
-        acrValues: 'mosip:idp:acr:generated-code mosip:idp:acr:biometrics'
+        authorizationEndpoint: 'https://id.gov.et/..',
+        tokenEndpoint: 'https://id.gov.et/...',
+        userInfoEndpoint: 'https://id.gov.et/.....',
+        acrValues: 'mosip........'
     }
 };
 
