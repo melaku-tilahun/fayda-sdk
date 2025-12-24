@@ -7,15 +7,15 @@ A minimalist, secure-by-default Node.js SDK for integrating with **Ethiopia's Na
 
 This package handles the complexity of **OIDC**, **PKCE**, and **Private Key JWT** authentication, allowing you to focus on your application logic.
 
-## 🚀 Features
+##  Features
 
-- 🔐 **Zero-Config PKCE**: Automatically generates cryptographically secure `code_verifier` and `code_challenge`.
-- ✍️ **Automated Signing**: Handles RSA-SHA256 signing of Client Assertions using your Private Key.
-- 🌍 **Environment Presets**: Built-in configurations for `UAT` (Staging) and `PROD` (Live).
-- 📦 **Identity Unwrapping**: Automatically verifies and decodes the User Identity JWT returned by Fayda.
-- 📜 **TypeScript Support**: Includes full type definitions.
+-  **Zero-Config PKCE**: Automatically generates cryptographically secure `code_verifier` and `code_challenge`.
+-  **Automated Signing**: Handles RSA-SHA256 signing of Client Assertions using your Private Key.
+-  **Environment Presets**: Built-in configurations for `UAT` (Staging) and `PROD` (Live).
+-  **Identity Unwrapping**: Automatically verifies and decodes the User Identity JWT returned by Fayda.
+-  **TypeScript Support**: Includes full type definitions.
 
-## 🔄 How It Works (The Flow)
+##  How It Works (The Flow)
 
 ```mermaid
 sequenceDiagram
@@ -40,13 +40,13 @@ sequenceDiagram
     SDK-->>Frontend: 11. Final User Data (JSON)
 ```
 
-## 📦 Installation
+##  Installation
 
 ```bash
 npm install fayda-sdk
 ```
 
-## 🛠️ Usage
+##  Usage
 
 ### 1. Initialize the Client
 
@@ -118,7 +118,7 @@ export async function handleCallback(req, res) {
 }
 ```
 
-## 🔑 Key Generation
+##  Key Generation
 
 To use this SDK, you need an RSA Key Pair registered with the National ID Program.
 
@@ -152,7 +152,7 @@ FAYDA_PRIVATE_KEY="LS0tLS1CRUdJTiBQUk..."
 
 See [docs/KEY_GENERATION.md](https://github.com/melaku-tilahun/fayda-sdk/blob/main/docs/KEY_GENERATION.md) for more details.
 
-## 🤝 Contributing
+##  Contributing
 
 Repository: [https://github.com/melaku-tilahun/fayda-sdk](https://github.com/melaku-tilahun/fayda-sdk)
 
@@ -162,6 +162,6 @@ Repository: [https://github.com/melaku-tilahun/fayda-sdk](https://github.com/mel
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 Distributed under the ISC License. See `LICENSE` for more information.
