@@ -1,7 +1,8 @@
 # Fayda SDK (Node.js)
 
 <div align="center">
-  <img src="docs/assets/fayda_signup.png" alt="Fayda Integration Demo" width="400" />
+  <img src="docs/assets/fayda_signup.png" alt="Fayda Integration Demo" height="300" />
+  <img src="docs/assets/fayda_mobile_mockup.png" alt="Fayda Mobile Demo" height="300" />
 </div>
 
 [![npm version](https://img.shields.io/npm/v/fayda-sdk)](https://www.npmjs.com/package/fayda-sdk)
