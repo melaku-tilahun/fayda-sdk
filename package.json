@@ -1,6 +1,6 @@
 {
   "name": "fayda-sdk",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A minimalist, secure Node.js SDK for Ethiopia's National ID (Fayda) OIDC integration.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
