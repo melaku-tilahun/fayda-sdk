@@ -1,5 +1,9 @@
 # Fayda SDK (Node.js)
 
+<div align="center">
+  <img src="docs/assets/fayda_signup.png" alt="Fayda Integration Demo" width="400" />
+</div>
+
 [![npm version](https://img.shields.io/npm/v/fayda-sdk)](https://www.npmjs.com/package/fayda-sdk)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
