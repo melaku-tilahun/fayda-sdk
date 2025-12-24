@@ -15,7 +15,7 @@ The Ethiopian National ID Program (Fayda) utilizes **MOSIP eSignet**, an open-st
     -   Manage RSA private keys.
     -   Construct JWT headers and payloads correctly.
     -   Sign payloads using RSA-SHA256.
-    -   *Risk:* Incorrect implementation leads to authentication failures or security vulnerabilities (e.g., weak signatures).
+    -   *Risk:* Incorrect implementation leads to authentication failures.
 
 2.  **PKCE Implementation**: To secure the authorization code flow, **PKCE (Proof Key for Code Exchange)** is required. This involves:
     -   Generating a high-entropy random string (`code_verifier`).
