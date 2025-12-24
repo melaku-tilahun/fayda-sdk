@@ -15,6 +15,31 @@ This package handles the complexity of **OIDC**, **PKCE**, and **Private Key JWT
 - 📦 **Identity Unwrapping**: Automatically verifies and decodes the User Identity JWT returned by Fayda.
 - 📜 **TypeScript Support**: Includes full type definitions.
 
+## 🔄 How It Works (The Flow)
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant SDK as Fayda SDK (Backend)
+    participant Fayda as Fayda eSignet
+
+    User->>Frontend: 1. Clicks "Sign in"
+    Frontend->>SDK: 2. Get Login URL
+    Note over SDK: Generates PKCE pair (Lock & Key)
+    SDK-->>Frontend: 3. Returns URL + Key
+    Frontend->>Fayda: 4. Redirect to Fayda
+    Fayda-->>User: 5. Shows Login Form
+    User->>Fayda: 6. Enters Verification (OTP/Bio)
+    Fayda-->>Frontend: 7. Redirect with 'code'
+    Frontend->>SDK: 8. Pass 'code' + 'Key'
+    Note over SDK: Signs request with RSA Private Key
+    SDK->>Fayda: 9. Handshake (Code + Key)
+    Fayda-->>SDK: 10. Returns User Data (Signed JWT)
+    Note over SDK: Verifies Signature & Decodes
+    SDK-->>Frontend: 11. Final User Data (JSON)
+```
+
 ## 📦 Installation
 
 ```bash
