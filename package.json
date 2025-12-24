@@ -1,0 +1,55 @@
+{
+  "name": "fayda-sdk",
+  "version": "1.0.1",
+  "description": "A minimalist, secure Node.js SDK for Ethiopia's National ID (Fayda) OIDC integration.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melaku-tilahun/fayda-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/melaku-tilahun/fayda-sdk/issues"
+  },
+  "homepage": "https://github.com/melaku-tilahun/fayda-sdk#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup && tsc",
+    "dev": "tsup --watch",
+    "test": "node tests/integration.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "axios": "^1.7.9",
+    "jose": "^5.9.6"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "fayda",
+    "national-id",
+    "ethiopia",
+    "oidc",
+    "esignet",
+    "sdk",
+    "security",
+    "pkce",
+    "jwt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
