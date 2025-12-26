@@ -7,7 +7,7 @@ Thank you for your interest in contributing to the **Fayda SDK**! We welcome con
 1.  **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
 2.  **Clone your Fork**:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/fayda-sdk.git
+    git clone https://github.com/melaku-tilahun/fayda-sdk.git
     cd fayda-sdk
     ```
 3.  **Create a Branch**:
