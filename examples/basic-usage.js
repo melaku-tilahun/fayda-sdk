@@ -1,4 +1,4 @@
-import { FaydaClient } from '../dist/index.js'; // In real usage: from 'fayda-sdk'
+import { FaydaClient } from 'fayda-sdk'; // In real usage: from 'fayda-sdk'
 
 // This is a demo of how a developer would use the SDK
 // Note: You must run 'npm run build' first!
